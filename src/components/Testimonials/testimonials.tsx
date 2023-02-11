@@ -11,7 +11,10 @@ type Props = {};
 const Testimonials = (props: Props) => {
     return (
         <>
-            <div className="flex flex-col justify-center content-center items-center mt-20 mb-20 text-white max-w-7xl">
+            <div
+                id="testimonials"
+                className="flex flex-col justify-center content-center items-center mt-20 mb-20 text-white max-w-7xl"
+            >
                 <h2 className={wrapperHeader}>TESTIMONIALS</h2>
                 <p className={wrapperDesc}>
                     Led by a team of world class builders from Ycombinator, a16z

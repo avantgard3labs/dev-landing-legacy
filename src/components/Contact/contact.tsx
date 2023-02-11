@@ -43,6 +43,7 @@ const Contact = (props: Props) => {
 
     return (
         <div
+            id="contact"
             style={{
                 backgroundImage: `url(${ringsFromLeft.src})`,
                 backgroundSize: "contain",

@@ -4,10 +4,11 @@ import Image from "next/image";
 type Props = {
     title: string;
     caption: string;
+    image: any;
 };
 
 const ServiceCard = (props: Props) => {
-    const { title, caption } = props;
+    const { title, caption, image } = props;
     const [isHovered, setIsHovered] = useState<boolean>(false);
 
     console.log(caption);
@@ -25,11 +26,13 @@ const ServiceCard = (props: Props) => {
                         }`}
                     >
                         <Image
-                            src={SettingsIcon}
-                            className=" lg:w-20 w-10 mb-3"
+                            src={image}
+                            className=" lg:w-20 w-10 mb-3 opacity-60"
                             alt=""
                         />
-                        <p className=" text-sm lg:text-base">{title}</p>
+                        <p className=" text-sm lg:text-base text-white/60">
+                            {title}
+                        </p>
                     </div>
                 </div>
                 {isHovered && (

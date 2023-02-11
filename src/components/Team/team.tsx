@@ -12,7 +12,10 @@ type Props = {};
 const Team = (props: Props) => {
     return (
         <>
-            <div className="flex flex-col justify-center content-center items-center mt-20 mb-20 text-white">
+            <div
+                id="team"
+                className="flex flex-col justify-center content-center items-center mt-20 mb-20 text-white"
+            >
                 <h2 className={wrapperHeader}>TEAM</h2>
                 <p className={wrapperDesc}>
                     Led by a team of world class builders from Ycombinator, a16z

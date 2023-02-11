@@ -2,18 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-  html {
-    font-family: "Mulish", sans-serif;
-    background: #1d1f29;
-  }
+    html {
+        font-family: "Mulish", sans-serif;
+        background: #1d1f29;
+    }
 }
 
 .nav-item {
-  line-height: 40px;
+    line-height: 40px;
 }
 .nav-item:hover {
-  font-size: 1.2rem;
-  transition-duration: 200ms;
+    color: #c0befb;
+    transition-duration: 200ms;
 }
